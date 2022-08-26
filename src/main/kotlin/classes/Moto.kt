@@ -53,7 +53,7 @@ class Moto(cor: String, marca: String) : Veiculo(cor, marca) {
 
         println()
         println("|         O teste drive acabou!!          |")
-        println("|  Você deseja comprar com a moto? [S/N]  |")
+        println("|    Você deseja comprar a moto? [S/N]    |")
         print("Opc: ")
         val resp = readln()
 
@@ -101,9 +101,12 @@ class Moto(cor: String, marca: String) : Veiculo(cor, marca) {
             print("Em quantas vezes? ")
             val respVezes = readln()
 
-            println("Pagamento Confirmado de R$185.000,00 em $respVezes vezes")
+            println("Pagamento Confirmado de R$185.000,00 em $respVezes vezes no crédito")
             println()
 
+        } else {
+            println("Pagamento Confirmado de R$185.000,00 no crédito")
+            println()
         }
     }
     fun debito() {

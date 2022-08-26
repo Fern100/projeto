@@ -55,6 +55,7 @@ fun main() {
 
                     if (testDrive == "S" || testDrive == "s") {
                         carro1.testDrive()
+                        carro1.exibir()
                         break
 
                     } else {

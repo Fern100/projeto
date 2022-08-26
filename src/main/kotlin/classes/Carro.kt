@@ -55,7 +55,7 @@ class Carro(cor: String, marca: String) : Veiculo(cor, marca) {
             }
             println()
             println("|         O teste drive acabou!!           |")
-            println("|  Você deseja comprar com o carro? [S/N]  |")
+            println("|    Você deseja comprar  o carro? [S/N]   |")
             print("Opc: ")
             val resp = readln()
 
@@ -105,11 +105,11 @@ class Carro(cor: String, marca: String) : Veiculo(cor, marca) {
             print("Em quantas vezes? ")
             var respVezes = readln()
             println()
-            println("Pagamento Confirmado de R$185.000,00 em $respVezes vezes")
+            println("Pagamento Confirmado de R$185.000,00 em $respVezes vezes no crédito")
 
         }else {
             println()
-            println("Pagamento Confirmado de R$185.000,00")
+            println("Pagamento Confirmado de R$185.000,00 no crédito")
             println()
         }
     }

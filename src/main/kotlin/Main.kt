@@ -51,7 +51,7 @@ fun main() {
                     val carro1 = Carro(corCarro1, marcaCarro1)
 
                     println("Deseja fazer um test Drive? [S/N]")
-                    var testDrive = readln()
+                    val testDrive = readln()
 
                     if (testDrive == "S" || testDrive == "s") {
                         carro1.testDrive()

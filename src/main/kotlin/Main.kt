@@ -20,7 +20,7 @@ fun main() {
         print("Digite o seu endereço: ")
         val endereco = readln()
 
-        print("Gostaria de receber promoções da nossa loja? [S/N]")
+        print("Gostaria de receber promoções da nossa loja? [S/N]: ")
         val marketing = readln()
 
         if (marketing == "S") {
@@ -50,13 +50,14 @@ fun main() {
 
                     val carro1 = Carro(corCarro1, marcaCarro1)
 
-                    println("Deseja fazer um test Drive? [S/N]")
+                    print("Deseja fazer um test Drive? [S/N]: ")
                     val testDrive = readln()
 
                     if (testDrive == "S" || testDrive == "s") {
                         carro1.testDrive()
+
                     } else {
-                        println("Deseja finalizar a compra? [S/N]")
+                        println("Deseja finalizar a compra? [S/N]: ")
                         var resp = readln()
                         if (resp == "S" || resp == "s") {
                             println("O carro foi comprado!!")

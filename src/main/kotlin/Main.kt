@@ -42,15 +42,15 @@ fun main() {
             when (readln().toInt()) {
                 1 -> {
                     println()
-                    print("Digite a cor do carro: ")
+                    println("Digite a cor do carro: ")
                     val corCarro1 = readln()
 
-                    print("Digite a marca do carro: ")
+                    println("Digite a marca do carro: ")
                     val marcaCarro1 = readln()
 
                     val carro1 = Carro(corCarro1, marcaCarro1)
 
-                    print("Deseja fazer um test Drive? [S/N]: ")
+                    println("Deseja fazer um test Drive? [S/N]: ")
                     val testDrive = readln()
 
                     if (testDrive == "S" || testDrive == "s") {
@@ -58,9 +58,9 @@ fun main() {
 
                     } else {
                         println("Deseja finalizar a compra? [S/N]: ")
-                        var resp = readln()
+                        val resp = readln()
                         if (resp == "S" || resp == "s") {
-                            println("O carro foi comprado!!")
+                            carro1.pagamentoCliente()
                             carro1.exibir()
                             break
                         } else {
@@ -85,8 +85,9 @@ fun main() {
                         println("Deseja finalizar a compra? [S/N]")
                         var resp = readln()
                         if (resp == "S" || resp == "s") {
-                            println("A moto foi comprada!!")
+                            moto1.pagamentoCliente()
                             moto1.exibir()
+                            println()
                             break
                         } else {
                             println("Voltando para o menu")

@@ -127,6 +127,6 @@ class Carro(cor: String, marca: String) : Veiculo(cor, marca) {
     }
 
     override fun exibir() {
-        println("A marca da moto escolhida é: $marca e sua cor é $cor")
+        println("A marca do carro escolhida é: $marca e sua cor é $cor")
     }
 }

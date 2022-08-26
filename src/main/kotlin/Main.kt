@@ -55,6 +55,7 @@ fun main() {
 
                     if (testDrive == "S" || testDrive == "s") {
                         carro1.testDrive()
+                        break
 
                     } else {
                         println("Deseja finalizar a compra? [S/N]: ")
@@ -81,6 +82,7 @@ fun main() {
                     var testDrive = readln()
                     if (testDrive == "S" || testDrive == "s") {
                         moto1.testDrive()
+                        break
                     } else {
                         println("Deseja finalizar a compra? [S/N]")
                         var resp = readln()

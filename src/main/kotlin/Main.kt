@@ -8,6 +8,12 @@ fun main() {
 
         try {
 
+        println("================================================")
+        println("|   Bem vindo á Concessionária Gen Veiculos   |")
+        println("================================================")
+
+
+
         print("Digite o seu nome: ")
         val nome = readln()
 
@@ -20,11 +26,12 @@ fun main() {
         print("Digite o seu endereço: ")
         val endereco = readln()
 
-        print("Gostaria de receber promoções da nossa loja? [S/N]: ")
+        print("Gostaria de receber e-mails promocionais da nossa concessionária? [S/N]: ")
         val marketing = readln()
 
         if (marketing == "S") {
             marketing1 = true
+            print("Enviaremos e-mails referente ás nossas promoções semanalmente para você!! :) ")
         }
         var cliente1 = CadastroCliente(nome, telefone, email, endereco, marketing1)
 
@@ -55,6 +62,7 @@ fun main() {
 
                     if (testDrive == "S" || testDrive == "s") {
                         carro1.testDrive()
+                        carro1.exibir()
                         break
 
                     } else {
